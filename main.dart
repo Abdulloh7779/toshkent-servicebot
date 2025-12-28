@@ -98,19 +98,19 @@ Widget glassInput(
   IconData icon = Icons.text_fields;
 
   // hint bo‘yicha mos icon tanlash
-  if (hint.contains("Ism")  hint.contains("Имя")  hint.contains("First")) {
+  if (hint.contains("Ism") || hint.contains("Имя") || hint.contains("First")) {
     icon = Icons.person;
-  } else if (hint.contains("Familiya") 
-      hint.contains("Фамилия") 
+  } else if (hint.contains("Familiya") ||
+      hint.contains("Фамилия") ||
       hint.contains("Last")) {
     icon = Icons.person_outline;
-  } else if (hint.contains("Email")  hint.contains("почта")) {
+  } else if (hint.contains("Email") || hint.contains("почта")) {
     icon = Icons.email;
-  } else if (hint.contains("Telefon") 
-      hint.contains("Phone") 
+  } else if (hint.contains("Telefon") ||
+      hint.contains("Phone") ||
       hint.contains("Телефон")) {
     icon = Icons.phone;
-  } else if (hint.contains("Manzil") 
+  } else if (hint.contains("Manzil") ||
       hint.contains("Address") ||
       hint.contains("Адрес")) {
     icon = Icons.location_on;
